@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Krabö Tools — cutting and machining solutions, tooling and industrial supply.">
+<title>Krabö Tools | Cutting & Machining Solutions</title>
+<style>
+:root{--green:#087344;--deep:#073d2a;--lime:#b8df55;--ink:#14251e;--muted:#66756d;--paper:#f5f8f5;--line:#e1e9e3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,"Noto Sans SC",sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+.topline{background:var(--deep);color:#d9eee2;font-size:12px;letter-spacing:.04em}.topline .wrap{display:flex;justify-content:space-between;gap:18px;padding:9px 0;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand img{width:230px;max-height:68px;object-fit:contain;display:block}.links{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:650}.links a:hover{color:var(--green)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:white;padding:12px 19px;border-radius:5px;font-weight:700;font-size:14px;transition:.2s}.nav-cta:hover,.btn:hover{background:var(--deep);transform:translateY(-1px)}.menu{display:none;background:none;border:0;font-size:25px;color:var(--deep)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(115deg,#062f22 0%,#087344 58%,#155c3e 100%);color:#fff}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-130px;top:-180px;box-shadow:0 0 0 55px rgba(255,255,255,.035),0 0 0 110px rgba(255,255,255,.025)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:54px;padding:88px 0 92px}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.19em;color:var(--lime);font-weight:800}.hero h1{font-size:clamp(40px,5vw,66px);line-height:1.06;letter-spacing:-.04em;margin:18px 0 22px;max-width:650px}.hero p{font-size:17px;color:#d7e9df;max-width:560px;margin:0 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn-light{background:#fff;color:var(--deep)}.btn-light:hover{background:var(--lime);color:var(--deep)}.hero-note{font-size:12px;color:#c3dfce;margin-top:22px}.hero-visual{position:relative;min-height:360px;display:flex;align-items:center;justify-content:center}.hero-visual .panel{width:min(100%,450px);padding:22px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.2);backdrop-filter:blur(8px)}.hero-visual img{display:block;width:100%;border-radius:9px}.visual-caption{display:flex;justify-content:space-between;gap:12px;padding:16px 2px 0;color:#e5f4ea;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.stats{background:#fff;border-bottom:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 0}.stat{padding:0 26px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat strong{display:block;color:var(--green);font-size:14px;letter-spacing:.06em;text-transform:uppercase}.stat span{font-size:13px;color:var(--muted)}
+section{padding:88px 0}.section-head{max-width:650px;margin-bottom:38px}.kicker{color:var(--green);font-weight:800;font-size:12px;letter-spacing:.17em;text-transform:uppercase}.section-head h2{font-size:clamp(30px,4vw,43px);line-height:1.12;letter-spacing:-.035em;margin:12px 0}.section-head p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.about-card{background:var(--paper);padding:34px;border-left:4px solid var(--green);border-radius:0 12px 12px 0}.about-card .big{font-size:25px;font-weight:750;line-height:1.3;color:var(--deep);margin:0 0 14px}.about-card p{color:var(--muted);margin:0}.about-copy p{color:var(--muted)}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:25px}.check{display:flex;gap:10px;font-size:14px;font-weight:650}.check b{color:var(--green)}
+.products{background:var(--paper)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:10px;padding:28px;min-height:225px;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 16px 35px rgba(14,65,42,.09);border-color:#b8d7c3}.num{font-size:12px;color:var(--green);font-weight:800;letter-spacing:.12em}.card h3{font-size:20px;margin:22px 0 10px}.card p{font-size:14px;color:var(--muted);margin:0}.icon{width:42px;height:42px;border-radius:9px;background:#e8f3ec;color:var(--green);display:grid;place-items:center;font-size:20px;margin-top:18px}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:start}.why-list{display:grid;gap:18px}.why-item{display:grid;grid-template-columns:42px 1fr;gap:15px;padding-bottom:18px;border-bottom:1px solid var(--line)}.why-item .icon{margin:0}.why-item h3{margin:0 0 4px;font-size:17px}.why-item p{margin:0;color:var(--muted);font-size:14px}
+.cta{background:var(--deep);color:#fff;padding:62px 0}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:clamp(28px,3vw,38px);line-height:1.15;margin:0 0 8px}.cta p{margin:0;color:#c8ded1}
+.contact{background:#f8faf8}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:54px}.contact-details{display:grid;gap:18px}.detail{padding:18px 0;border-bottom:1px solid var(--line)}.detail small{display:block;color:var(--green);font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}.detail a,.detail span{font-weight:650}.contact-form{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px;box-shadow:0 12px 35px rgba(10,50,30,.04)}.contact-form h3{margin:0 0 5px;font-size:22px}.contact-form>p{margin:0 0 22px;color:var(--muted);font-size:14px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px;margin-bottom:14px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:750;color:#43564b}.field input,.field textarea{width:100%;border:1px solid #dce6df;border-radius:5px;padding:12px;font:inherit;font-size:14px;outline:none}.field input:focus,.field textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #08734416}.field textarea{min-height:120px;resize:vertical}.form-note{font-size:11px;color:#829087;margin-top:12px}
+footer{background:#062d20;color:#c7dbcf;padding:26px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot strong{color:#fff}
+@media(max-width:800px){.links{display:none;position:absolute;top:82px;left:0;right:0;background:white;padding:20px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero-grid,.about-grid,.why-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding:65px 0;gap:28px}.hero-visual{min-height:250px}.cards{grid-template-columns:1fr 1fr}.about-grid,.why-grid,.contact-grid{gap:30px}.cta-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:540px){.wrap{width:min(100% - 30px,1160px)}.topline .wrap{font-size:11px}.brand img{width:195px}.stats-grid{grid-template-columns:1fr;gap:14px}.stat{padding:0;border:0}.cards{grid-template-columns:1fr}.checklist{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:65px 0}.hero h1{font-size:42px}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="wrap"><span>INDUSTRIAL CUTTING & MACHINING SOLUTIONS</span><span>ENGLISH&nbsp; | &nbsp;中文</span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#home" aria-label="Krabö Tools home"><img src="logo.jpg" alt="Krabö Tools 陕量实业 logo"></a>
+<nav class="links" id="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#solutions">Solutions</a><a href="#why-us">Why Krabö</a><a href="#contact">Contact</a></nav>
+<a class="nav-cta" href="#contact">Talk to our team ↗</a><button class="menu" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">Your machining partner</div><h1>Precision starts with the right tools.</h1><p>Practical cutting and machining solutions for businesses that value dependable products, responsive communication and long-term cooperation.</p><div class="hero-actions"><a class="btn btn-light" href="#solutions">Explore solutions&nbsp; →</a><a class="btn" style="background:transparent;border:1px solid #ffffff80" href="#contact">Send an inquiry</a></div><div class="hero-note">KRABÖ TOOLS&nbsp; · &nbsp;陕量实业</div></div>
+<div class="hero-visual"><div class="panel"><img src="cover-banner.png" alt="Krabö Tools industrial brand banner"><div class="visual-caption"><span>Cutting & machining</span><span>Built for industry</span></div></div></div>
+</div></section>
+<div class="stats"><div class="wrap stats-grid"><div class="stat"><strong>Industrial focus</strong><span>Solutions for cutting and machining needs</span></div><div class="stat"><strong>Global communication</strong><span>Connecting with customers and suppliers</span></div><div class="stat"><strong>Long-term mindset</strong><span>Built around trust and cooperation</span></div></div></div>
+<section id="about"><div class="wrap about-grid">
+<div class="about-card"><p class="big">A practical partner for your industrial sourcing needs.</p><p>Krabö Tools — 陕量实业 — focuses on cutting and machining system integration services.</p></div>
+<div class="about-copy"><div class="section-head"><div class="kicker">About Krabö Tools</div><h2>Connecting products, people and production.</h2><p>We work to make industrial sourcing and communication straightforward. Our focus is understanding requirements, coordinating suitable solutions and building dependable business relationships.</p></div><div class="checklist"><div class="check"><b>✓</b><span>Customer-focused communication</span></div><div class="check"><b>✓</b><span>Industrial product orientation</span></div><div class="check"><b>✓</b><span>Responsive inquiry handling</span></div><div class="check"><b>✓</b><span>Cooperation-minded service</span></div></div></div>
+</div></section>
+<section class="products" id="solutions"><div class="wrap"><div class="section-head"><div class="kicker">What we focus on</div><h2>Solutions for the work that matters.</h2><p>Tell us about your application or sourcing requirement. We can discuss the right direction for your business.</p></div>
+<div class="cards">
+<article class="card"><div class="num">01 / CUTTING</div><div class="icon">⌁</div><h3>Cutting tools</h3><p>Tooling options for industrial cutting and machining applications.</p></article>
+<article class="card"><div class="num">02 / MACHINING</div><div class="icon">⚙</div><h3>Machining solutions</h3><p>Support for machining-related product and system requirements.</p></article>
+<article class="card"><div class="num">03 / SOURCING</div><div class="icon">↗</div><h3>Industrial sourcing</h3><p>Communication and coordination to help connect business needs with suitable supply.</p></article>
+</div></div></section>
+<section id="why-us"><div class="wrap why-grid"><div class="section-head"><div class="kicker">Why work with us</div><h2>Clear communication. Practical thinking. Lasting cooperation.</h2><p>Good business starts with understanding what you need. We aim to make every inquiry clear, useful and easy to follow up.</p></div>
+<div class="why-list">
+<div class="why-item"><div class="icon">◎</div><div><h3>Understand the requirement</h3><p>We start by listening to your application, specifications and priorities.</p></div></div>
+<div class="why-item"><div class="icon">↔</div><div><h3>Coordinate the next step</h3><p>We help move product and sourcing discussions forward with clear communication.</p></div></div>
+<div class="why-item"><div class="icon">◇</div><div><h3>Build trusted relationships</h3><p>We value responsive service and cooperation that can grow over time.</p></div></div>
+</div></div></section>
+<div class="cta"><div class="wrap cta-inner"><div><h2>Have a product or sourcing inquiry?</h2><p>Share your requirement with the Krabö Tools team.</p></div><a class="btn btn-light" href="#contact">Contact us&nbsp; →</a></div></div>
+<section class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="kicker">Get in touch</div><h2>Let’s discuss your requirements.</h2><p>Contact us by email or phone, or send a message using the inquiry form.</p></div>
+<div class="contact-grid"><div class="contact-details">
+<div class="detail"><small>Company</small><span>Wuxi Jees Export Import Co., Ltd.</span></div>
+<div class="detail"><small>Email</small><a href="mailto:tanjoymahmud@gmail.com">tanjoymahmud@gmail.com</a></div>
+<div class="detail"><small>China phone</small><a href="tel:+8615805152218">+86 158 0515 2218</a></div>
+<div class="detail"><small>Bangladesh phone</small><a href="tel:+8801741903384">+880 1741 903384</a></div>
+</div>
+<form class="contact-form" id="inquiry"><h3>Send an inquiry</h3><p>Complete the details and your email app will open with the message prepared.</p>
+<div class="fields"><div class="field"><label for="name">Your name</label><input id="name" name="name" required placeholder="Name"></div><div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" required placeholder="name@company.com"></div><div class="field full"><label for="company">Company</label><input id="company" name="company" placeholder="Company name"></div><div class="field full"><label for="message">How can we help?</label><textarea id="message" name="message" required placeholder="Tell us about your product or sourcing requirement..."></textarea></div></div>
+<button class="btn" type="submit" style="border:0;cursor:pointer">Prepare email&nbsp; →</button><div class="form-note">This form opens your email application. It does not store submissions on this website.</div>
+</form></div></div></section>
+</main>
+<footer><div class="wrap foot"><span><strong>Krabö Tools · 陕量实业</strong> &nbsp;|&nbsp; Cutting & machining solutions</span><span>© <span id="year"></span> Krabö Tools. All rights reserved.</span></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('inquiry').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);const subject=encodeURIComponent('Krabö Tools website inquiry');const body=encodeURIComponent('Name: '+d.get('name')+'\\nEmail: '+d.get('email')+'\\nCompany: '+d.get('company')+'\\n\\nMessage:\\n'+d.get('message'));window.location.href='mailto:tanjoymahmud@gmail.com?subject='+subject+'&body='+body;});
+</script>
+</body></html>
